@@ -18,7 +18,7 @@ in {
       };
     };
 
-    # Звуковой стек Pipewire
+   
     services.pulseaudio.enable = false;
     security.rtkit.enable = true;
     services.pipewire = {
@@ -28,19 +28,19 @@ in {
       pulse.enable = true;
     };
 
-    # Печать
+   
     services.printing.enable = false;
 
     environment.systemPackages = with pkgs; [
       gnome-tweaks 
       gnome-extension-manager 
       
-      # Популярные расширения GNOME
+      
       gnomeExtensions.appindicator
       gnomeExtensions.dash-to-dock
       gnomeExtensions.blur-my-shell
       
-      # Темы и иконки
+     
       bibata-cursors
       colloid-icon-theme
     ];
