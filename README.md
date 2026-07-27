@@ -8,7 +8,7 @@ Declarative, zero-drift system configuration for daily driving, network labs, an
 
 ---
 
-	##  Repository Structure
+##  Repository Structure
 
 ```text
 .
