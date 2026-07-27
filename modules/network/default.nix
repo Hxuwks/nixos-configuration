@@ -1,0 +1,8 @@
+{ ... }:
+
+{
+  imports = [
+    ./analysis.nix
+    ./services
+  ];
+}
