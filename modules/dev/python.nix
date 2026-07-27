@@ -4,7 +4,7 @@ with lib;
 let 
   cfg = config.modules.dev.python;
   
-  # Описываем набор нужных Python-пакетов
+  
   myPythonPackages = pkgs.python3.withPackages (ps: with ps; [
     requests
     scapy
