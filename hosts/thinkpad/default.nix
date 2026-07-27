@@ -12,7 +12,7 @@
   ];
   networking.hostName = "thinkpad";
 
-  # Включение нужных доменных модулей
+  
   modules = {
     core = {
       system.enable = true;
@@ -45,7 +45,7 @@
   
   users.groups.clab_admins = {};
 
-  # Права пользователя hxuwks
+  
   users.users.hxuwks.extraGroups = [
     "wheel"
     "networkmanager"
