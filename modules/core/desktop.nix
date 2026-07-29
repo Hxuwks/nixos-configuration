@@ -44,5 +44,6 @@ in {
       bibata-cursors
       colloid-icon-theme
     ];
+
   };
 }
