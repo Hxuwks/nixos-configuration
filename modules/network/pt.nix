@@ -5,7 +5,7 @@
   ...
 }:
 with lib; let
-  cfg = config.modules.network.analysis;
+  cfg = config.modules.netwiork.pt;
 in {
   options.modules.network.analysis = {
     enable = mkEnableOption "Cisco packet tracer integraion into Nix";
