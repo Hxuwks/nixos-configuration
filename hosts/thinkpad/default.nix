@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   imports = [
     ./hardware-configuration.nix
     ./hardware.nix
@@ -11,6 +13,7 @@
     ../../modules/network
   ];
   networking.hostName = "thinkpad";
+  environment.etc."hosts".mode = "0644";
 
   
   modules = {
@@ -37,12 +40,13 @@
 
     network = {
       analysis.enable = true;
+      pt.enable = true;
       services = {
         vpn.enable = true;
       };
     };
   };
-  
+
   users.groups.clab_admins = {};
 
   

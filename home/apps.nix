@@ -10,5 +10,6 @@
     planify
     telegram-desktop
     
+    libreoffice
   ];
 }

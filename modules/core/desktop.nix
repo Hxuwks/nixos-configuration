@@ -1,7 +1,11 @@
-{ config, pkgs, lib, ... }:
-
-with lib;
-let cfg = config.modules.core.desktop;
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+with lib; let
+  cfg = config.modules.core.desktop;
 in {
   options.modules.core.desktop = {
     enable = mkEnableOption "Desktop Environment (GNOME + Pipewire)";
@@ -18,7 +22,6 @@ in {
       };
     };
 
-   
     services.pulseaudio.enable = false;
     security.rtkit.enable = true;
     services.pipewire = {
@@ -28,22 +31,27 @@ in {
       pulse.enable = true;
     };
 
-   
     services.printing.enable = false;
 
     environment.systemPackages = with pkgs; [
-      gnome-tweaks 
-      gnome-extension-manager 
-      
-      
+      gnome-tweaks
+      gnome-extension-manager
+
       gnomeExtensions.appindicator
       gnomeExtensions.dash-to-dock
       gnomeExtensions.blur-my-shell
-      
-     
+
+      gnome-tweaks
+      gnome-extension-manager
+
+      # Популярные расширения GNOME
+      gnomeExtensions.appindicator
+      gnomeExtensions.dash-to-dock
+      gnomeExtensions.blur-my-shell
+
+      # Темы и иконки
       bibata-cursors
       colloid-icon-theme
     ];
-
   };
 }

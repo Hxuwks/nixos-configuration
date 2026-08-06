@@ -16,6 +16,7 @@ in {
       tcpdump
       iproute2
       bind.dnsutils
+      inetutils
       traceroute
       mtr
       iperf3
