@@ -14,7 +14,7 @@
   ];
   networking.hostName = "thinkpad";
   environment.etc."hosts".mode = "0644";
-
+ 
   
   modules = {
     core = {

@@ -14,13 +14,15 @@ in {
   config = mkIf cfg.enable {
     services.xserver = {
       enable = true;
-      displayManager.gdm.enable = true;
-      desktopManager.gnome.enable = true;
       xkb = {
         layout = "us,ru";
         options = "grp:win_space_toggle";
       };
     };
+
+    # Актуальные пути для GNOME и GDM без привязки к xserver
+    services.displayManager.gdm.enable = true;
+    services.desktopManager.gnome.enable = true;
 
     services.pulseaudio.enable = false;
     security.rtkit.enable = true;
@@ -32,15 +34,20 @@ in {
     };
 
     services.printing.enable = false;
-
+    
+    fonts = {
+      enableDefaultPackages = true;
+    
+      packages = with pkgs; [
+        # Устанавливаем только нужные Nerd-версии шрифтов
+        nerd-fonts.jetbrains-mono
+        nerd-fonts.fira-code
+        nerd-fonts.hack
+        nerd-fonts.meslo-lg
+      ];
+    };
+    
     environment.systemPackages = with pkgs; [
-      gnome-tweaks
-      gnome-extension-manager
-
-      gnomeExtensions.appindicator
-      gnomeExtensions.dash-to-dock
-      gnomeExtensions.blur-my-shell
-
       gnome-tweaks
       gnome-extension-manager
 
