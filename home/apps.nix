@@ -7,7 +7,6 @@
   programs.firefox.enable = true;
 
   home.packages = with pkgs; [
-    obsidian
     amberol
     planify
     telegram-desktop
@@ -17,7 +16,6 @@
     mermaid-cli
     ptyxis
     resources
-    spotify
     imhex
     typesetter
     typst

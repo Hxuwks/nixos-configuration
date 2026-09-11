@@ -11,6 +11,10 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
+    nixvim = {
+          url = "github:nix-community/nixvim";
+          inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, nix-flatpak, nixvim,  ... }@inputs: {

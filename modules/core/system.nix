@@ -36,11 +36,6 @@ in {
       extraGroups = ["networkmanager" "wheel" "dialout" "uucp"];
     };
 
-
-
-    nix.extraOptions = ''
-          include /etc/nixos/secrets/github-token
-        '';
     nixpkgs.config.allowUnfree = true;
 
     environment.systemPackages = with pkgs; [

@@ -21,7 +21,6 @@ in {
         # "com.spotify.Client"
         # "com.valvesoftware.Steam"
         "io.github.focustimerhq.FocusTimer"
-        "org.zaproxy.ZAP"
       ];
     };
   };
