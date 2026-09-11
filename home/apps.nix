@@ -19,8 +19,7 @@
     imhex
     typesetter
     typst
-
-    # for university
+   # for university
     arduino
   ];
 }

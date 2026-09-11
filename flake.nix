@@ -11,13 +11,9 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
-    nixvim = {
-          url = "github:nix-community/nixvim";
-          inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-flatpak, nixvim,  ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nix-flatpak,  ... }@inputs: {
     nixosConfigurations = {
       thinkpad = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
