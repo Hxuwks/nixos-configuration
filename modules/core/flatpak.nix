@@ -18,8 +18,6 @@ in {
       }];
 
       packages = [
-        # "com.spotify.Client"
-        # "com.valvesoftware.Steam"
         "io.github.focustimerhq.FocusTimer"
       ];
     };

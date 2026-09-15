@@ -38,7 +38,6 @@ in {
       enableDefaultPackages = true;
 
       packages = with pkgs; [
-        # Устанавливаем только нужные Nerd-версии шрифтов
         nerd-fonts.jetbrains-mono
         nerd-fonts.fira-code
         nerd-fonts.hack
@@ -52,12 +51,10 @@ in {
       gnome-tweaks
       gnome-extension-manager
 
-      # Популярные расширения GNOME
       gnomeExtensions.appindicator
       gnomeExtensions.dash-to-dock
       gnomeExtensions.blur-my-shell
 
-      # Темы и иконки
       bibata-cursors
       colloid-icon-theme
     ];
