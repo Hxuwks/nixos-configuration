@@ -40,9 +40,6 @@ The configuration follows a strict separation of concerns:
 
 - **OS**: NixOS (Flake-enabled)
 -  **Desktop Environment**: GNOME (minimal, declarative theme)
-- **Editors**:
-    - **Neovim**: Fast CLI-first editor for rapid system tweaks & SSH sessions.
-    - **VS Code**: Full-fledged IDE for complex developments.
 - **Networking & Security**: Custom AmneziaWG VPN integration, Containerlab environment support.
 
 ## How to Use & Extend
