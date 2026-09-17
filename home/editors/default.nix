@@ -4,5 +4,7 @@
     zed-editor
     vim
     obsidian
+
+    nixd
   ];
-}
+ }

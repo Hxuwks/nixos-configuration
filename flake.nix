@@ -13,7 +13,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-flatpak,  ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, ... }@inputs: {
     nixosConfigurations = {
       thinkpad = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
