@@ -18,7 +18,6 @@ in {
   config = mkIf cfg.enable {
     environment.systemPackages = [
       myPythonPackages
-      pkgs.pyright
     ];
   };
 }

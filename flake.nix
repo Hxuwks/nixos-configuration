@@ -11,7 +11,7 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
-  };
+    };
 
   outputs = { self, nixpkgs, home-manager, nix-flatpak, ... }@inputs: {
     nixosConfigurations = {

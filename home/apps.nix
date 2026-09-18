@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
-
+{pkgs, ...}: {
   programs.firefox.enable = true;
 
   home.packages = with pkgs; [
@@ -19,7 +14,7 @@
     imhex
     typesetter
     typst
-   # for university
+    # for university
     arduino
   ];
 }

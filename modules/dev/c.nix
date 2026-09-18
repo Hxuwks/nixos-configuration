@@ -13,7 +13,6 @@ in {
       gnumake
       cmake
       gdb
-      clang
     ];
   };
 }
